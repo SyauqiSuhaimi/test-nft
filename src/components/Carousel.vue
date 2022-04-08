@@ -1,12 +1,16 @@
 <template>
-  <div class="carousel">
-      
+
+<div class="parent">
+
+
+
+<div class="carousel">      
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../assets/HomeImage/image1.jpg" class="d-block w-100" style="max-height: 700px;" alt="...">
       <div class="carousel-caption">
-        <h1 class="captions display-3 text-start">Only USD0.01 a day, you can protect the rainforest for 30 years from destruction.</h1>
+        <h1 class="captions display-4 text-start">Only USD0.01 a day, you can protect the rainforest for 30 years from destruction.</h1>
       </div>
     </div>
     <!-- <div class="carousel-item">
@@ -38,6 +42,46 @@
   </button> -->
 </div>
   </div>
+
+<div class="spacerAbout">
+
+  <div class="aboutUs">
+      
+  <div class="mb-5 bg-body shadow abotUs">
+          <h1 class="title2">About Us</h1>
+          <div style="text-align: justify; margin-top:3%;">
+          <p>Malaysia is rich in biodiversity with around 306 species of mammals, 15,000 vascular plants and many species. This is largely to do with the tropical forests which are naturally rich in life all around the world. When forested cover decreases so does biodiversity, with wildlife being exposed and vulnerable to hunting, poaching, loss of breeding grounds as well as food resources. Beside that, much of that stored carbon is released into the atmosphere again as CO2 when forest are cut down. This is how deforestation and forest degradation contribute to global warming.</p>
+          <p>Need For Tree is a forest conservation service that protects rainforest ecosystems in Malaysia, and preserves them for future generations.  On behalf of tropical communities, we acquire rainforest real estate, and sell it to people anywhere on the globe, with the guarantee that the forest remains untouched for at least 30 years.</p>
+          <p>However, going green is not just an option, it is the future. We need to protect the environment; hence everyone should help the forest. If you're concerned about deforestation and the effect it has on vulnerable endangered species and people, now there's something you can do about it.</p>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card" style="max-width: 18rem; margin: 10px auto;">
+            <img src="../assets/HomeImage/image1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><strong>Project A</strong></h5>
+                <!-- <a href="#" class="btn">Protect Rainforest for 30 years USD100.00 </a> -->
+                <button type="button" class="btn btn-primary shadow" id="buttons">Protect Rainforest for 30 years USD100.00</button>
+            </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="max-width: 18rem; margin: 10px auto;">
+            <img src="../assets/HomeImage/image1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"><strong>Project A</strong></h5>
+                <!-- <a href="#" class="btn">Contribute to Keep It Green USD5.00</a> -->
+                <button type="button" class="btn btn-primary shadow" id="buttons">Contribute to Keep It Green USD5.00</button>
+            </div>
+            </div>
+          </div>
+        </div>
+</div>
+</div>
+</div>
+
+
+  </div>
 </template>
 
 <script>
@@ -47,6 +91,13 @@ export default {
 </script>
 
 <style>
+.title2{
+  /* font-size: px; */
+}
+
+p{
+  font-size: 20px;
+}
 .carousel-inner {
   position: relative;
 }
@@ -77,12 +128,62 @@ export default {
 }
 
 .carousel-caption {
-  top: 200px;
-  bottom: auto;
+/* transform: translateY(0%); */
+top: 20%;
+bottom: 80%;
 }
 
 .captions {
   font-weight:bolder; 
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+
+.parent {
+  position: relative;
+}
+/* 
+.spacerAbout{
+  background-color: black;
+    height: 1100px;
+} */
+
+.carousel{
+  position: relative;
+}
+
+.aboutUs{
+  position: absolute;
+  top: 80%;
+  left: 10%;
+  right: 10%;
+}
+
+.abotUs{
+  max-width: 1200px; 
+  min-height:800px; 
+  margin:30px auto; 
+  border-radius: 100px;
+  padding: 5% 50px;
+}
+
+#buttons{
+  background-color: #00B050;
+  color: white;
+  border: 0;
+  
+  
+}
+
+#buttons:hover{
+  background-color: rgb(4, 139, 47);
+  color: white;
+}
+
+
+/* .spacer{
+  min-height: 10000px;
+  margin: 0 0 -50px 0;
+  background-color: #000;
+} */
+
 </style>

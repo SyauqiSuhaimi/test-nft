@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Landing from '../views/Landing.vue'
-import FAQ from '../views/Landing.vue'
+import FAQ from '../views/FaqView.vue'
 import ContactUs from '../views/Landing.vue'
 
 const routes = [
